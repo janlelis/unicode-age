@@ -15,7 +15,13 @@ Unicode::Age.of "\u{10FFFD}" # => 2.0
 
 Characters of status "Unassigned" (Unicode General Category of **Cn**) will return `nil`.
 
-Unicode version: **8.0.0**
+## Supported Ruby/Unicode versions
+
+Ruby version | Unicode version
+-------------|----------------
+**2.3**      | **8.0.0**
+**2.2**      | **7.0.0**
+**2.1**      | **6.1.0**
 
 ## MIT License
 
