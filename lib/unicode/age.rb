@@ -22,10 +22,17 @@ module Unicode
       8.0,
     ].freeze
 
+    KNOWN_UNICODE_REGEXES = KNOWN_UNICODE_VERSIONS.map{ |uv|
+      begin
+        /\A\p{age=#{"%.1f" % uv}}*\z/
+      rescue RegexpError
+      end
+    }.compact.freeze
+
     def self.of(string)
       return nil if string =~ /\A\p{Unassigned}*\z/
-      KNOWN_UNICODE_VERSIONS.find{ |uv|
-        string =~ Regexp.compile('\A\p{age=%.1f}*\z' % uv)
+      KNOWN_UNICODE_VERSIONS.find.with_index{ |uv, index|
+        string =~ KNOWN_UNICODE_REGEXES[index]
       }
     end
   end

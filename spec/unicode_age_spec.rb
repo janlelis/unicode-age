@@ -8,8 +8,8 @@ describe Unicode::Age do
     assert_equal 3.0, Unicode::Age.of("ℜսᖯʏ")
     assert_equal 3.1, Unicode::Age.of("ℜ𝘂ᖯʏ")
     assert_equal 6.0, Unicode::Age.of("🚡")
-    assert_equal 7.0, Unicode::Age.of("🛲")
-    assert_equal 8.0, Unicode::Age.of("🌮 ")
+    assert_equal 7.0, Unicode::Age.of("🛲")  if RUBY_VERSION >= "2.2.0"
+    assert_equal 8.0, Unicode::Age.of("🌮 ") if RUBY_VERSION >= "2.3.0"
   end
 
   it "returns nil for unassigned codepoints" do
