@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.name          = "unicode-age"
   gem.version       = Unicode::Age::VERSION
   gem.summary       = "Determine required Unicode version of a string."
-  gem.description   = "A micromodule to detect which Unicode version is required to display a string."
+  gem.description   = "[Unicode #{Unicode::Age::UNICODE_VERSION}] A micromodule to detect which Unicode version is required to display a string."
   gem.authors       = ["Jan Lelis"]
   gem.email         = ["mail@janlelis.de"]
   gem.homepage      = "https://github.com/janlelis/unicode-age"
