@@ -16,6 +16,8 @@ Unicode::Age.of "\u{10FFFD}" # => 2.0
 
 Characters of status "Unassigned" (Unicode General Category of **Cn**) will raise a `Unicode::Age::UnknownAge` exception.
 
+**This is a breaking change:** In the current non-*pre* version of the gem on rubygems.org, unassigned characters will just return `nil`
+
 ## Supported Ruby/Unicode versions
 
 Ruby version | Unicode version
