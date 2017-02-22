@@ -13,8 +13,10 @@ describe Unicode::Age do
     assert_equal 9.0, Unicode::Age.of("🛒 ") if RUBY_VERSION >= "2.4.0"
   end
 
-  it "returns nil for unassigned codepoints" do
-    assert_equal nil, Unicode::Age.of("\u{10FFFF}")
+  it "will raise Unicode::Age::UnknownAge exception for unassigned characters" do
+    assert_raises Unicode::Age::UnknownAge do
+      assert_equal nil, Unicode::Age.of("\u{10FFFF}")
+    end
   end
 end
 

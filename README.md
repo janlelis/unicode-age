@@ -14,7 +14,7 @@ Unicode::Age.of "\u{10FFFF}" # => nil
 Unicode::Age.of "\u{10FFFD}" # => 2.0
 ```
 
-Characters of status "Unassigned" (Unicode General Category of **Cn**) will return `nil`.
+Characters of status "Unassigned" (Unicode General Category of **Cn**) will raise a `Unicode::Age::UnknownAge` exception.
 
 ## Supported Ruby/Unicode versions
 

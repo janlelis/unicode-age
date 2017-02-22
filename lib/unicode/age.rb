@@ -2,6 +2,8 @@ require_relative "age/version"
 
 module Unicode
   module Age
+    class UnknownAge < StandardError; end
+
     KNOWN_UNICODE_VERSIONS = [
       1.1,
       2.0,
@@ -31,7 +33,7 @@ module Unicode
     }.compact.freeze
 
     def self.of(string)
-      return nil if string =~ /\A\p{Unassigned}*\z/
+      raise(UnknownAge, "The string containts unassigned codepoints, so the Unicode version required cannot be determined. Your Ruby version supports Unicode #{UNICODE_VERSION}.") if string =~ /\A\p{Unassigned}*\z/
       KNOWN_UNICODE_VERSIONS.find.with_index{ |uv, index|
         string =~ KNOWN_UNICODE_REGEXES[index]
       }
