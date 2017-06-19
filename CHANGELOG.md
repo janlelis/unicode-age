@@ -1,10 +1,14 @@
 ## CHANGELOG
 
-### 2.0.0.pre
+### 2.0.0
 
-#### Breaking Change
+#### Breaking change
 
 Strings which contain unassigned codepoints (general category of **Cn**), will raise a `Unicode::Age::UnknownAge` exception.
+
+#### Unicode update
+
+Add Unicode 10 to list of known Unicode versions
 
 ### 1.1.0
 
