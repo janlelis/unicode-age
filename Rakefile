@@ -28,3 +28,13 @@ desc "#{gemspec.name} | IRB"
 task :irb do
   sh "irb -I ./lib -r #{gemspec.name.gsub '-','/'}"
 end
+
+# # #
+# Run Specs
+
+desc "#{gemspec.name} | Spec"
+task :spec do
+  sh "for file in spec/*.rb; do ruby $file; done"
+end
+task default: :spec
+
