@@ -11,6 +11,7 @@ describe Unicode::Age do
     assert_equal 7.0, Unicode::Age.of("🛲 ") if RUBY_VERSION >= "2.2.0"
     assert_equal 8.0, Unicode::Age.of("🌮 ") if RUBY_VERSION >= "2.3.0"
     assert_equal 9.0, Unicode::Age.of("🛒 ") if RUBY_VERSION >= "2.4.0"
+    assert_equal 10.0, Unicode::Age.of("🛷 ") if RUBY_VERSION >= "2.5.0"
   end
 
   it "will raise Unicode::Age::UnknownAge exception for unassigned characters" do

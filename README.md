@@ -10,6 +10,7 @@ Unicode::Age.of "🚡" # => 6.0
 Unicode::Age.of "🛲" # => 7.0
 Unicode::Age.of "🌮 " # => 8.0
 Unicode::Age.of "🛒" # => 9.0
+Unicode::Age.of "🛷"  # => 10.0
 Unicode::Age.of "\u{10FFFF}" # => nil
 Unicode::Age.of "\u{10FFFD}" # => 2.0
 ```
@@ -22,6 +23,7 @@ Characters of status "Unassigned" (Unicode General Category of **Cn**) will rais
 
 Ruby version | Unicode version
 -------------|----------------
+**2.5**      | **10.0.0**
 **2.4**      | **9.0.0**
 **2.3**      | **8.0.0**
 **2.2**      | **7.0.0**
@@ -29,4 +31,4 @@ Ruby version | Unicode version
 
 ## MIT License
 
-Copyright (C) 2016-2017 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+Copyright (C) 2016-2018 Jan Lelis <http://janlelis.com>. Released under the MIT license.
