@@ -23,7 +23,8 @@ module Unicode
       7.0,
       8.0,
       9.0,
-      10.0
+      10.0,
+      11.0,
     ].freeze
 
     KNOWN_UNICODE_REGEXES = KNOWN_UNICODE_VERSIONS.map{ |uv|
@@ -34,7 +35,7 @@ module Unicode
     }.compact.freeze
 
     def self.of(string)
-      raise(UnknownAge, "The string containts unassigned codepoints, so the Unicode version required cannot be determined. Your Ruby version supports Unicode #{UNICODE_VERSION}.") if string =~ /\A\p{Unassigned}*\z/
+      raise(UnknownAge, "The string contains unassigned codepoints, so the Unicode version required cannot be determined. Your Ruby version supports Unicode #{UNICODE_VERSION}.") if string =~ /\A\p{Unassigned}*\z/
       KNOWN_UNICODE_VERSIONS.find.with_index{ |uv, index|
         string =~ KNOWN_UNICODE_REGEXES[index]
       }
