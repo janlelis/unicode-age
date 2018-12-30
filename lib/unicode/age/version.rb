@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 module Unicode
   module Age
-    VERSION = "2.0.0".freeze
-    UNICODE_VERSION = "10.0.0".freeze
+    VERSION = "2.0.1"
+    UNICODE_VERSION = "11.0.0"
   end
 end
 

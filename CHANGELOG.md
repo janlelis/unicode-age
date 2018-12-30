@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### Next
+### 2.0.1
 
 * Support Unicode 11 (Ruby 2.6)
 
