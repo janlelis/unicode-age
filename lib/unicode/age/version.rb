@@ -2,7 +2,7 @@
 
 module Unicode
   module Age
-    VERSION = "2.0.1"
+    VERSION = "2.1.0"
     UNICODE_VERSION = "12.1.0"
   end
 end
