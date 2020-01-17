@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.summary       = "Determine required Unicode version of a string."
   gem.description   = "[Unicode #{Unicode::Age::UNICODE_VERSION}] A micromodule to detect which Unicode version is required to display a string."
   gem.authors       = ["Jan Lelis"]
-  gem.email         = ["mail@janlelis.de"]
+  gem.email         = ["hi@ruby.consulting"]
   gem.homepage      = "https://github.com/janlelis/unicode-age"
   gem.license       = "MIT"
 
