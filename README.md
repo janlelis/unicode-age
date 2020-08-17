@@ -19,17 +19,7 @@ Characters of status "Unassigned" (Unicode General Category of **Cn**) will rais
 
 ## Supported Ruby/Unicode versions
 
-Ruby version | Unicode version
--------------|----------------
-**2.7**      | **12.1.0**
-**2.6.3+**   | **12.1.0**
-**2.6.2**    | **12.0.0**
-**2.6.1-**   | **11.0.0**
-**2.5**      | **10.0.0**
-**2.4**      | **9.0.0**
-**2.3**      | **8.0.0**
-**2.2**      | **7.0.0**
-**2.1**      | **6.1.0**
+See the [Unicode — Ruby version table at Idiosyncratic Ruby](https://idiosyncratic-ruby.com/73-unicode-version-mapping.html)
 
 ## MIT License
 
