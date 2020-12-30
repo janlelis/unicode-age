@@ -1,4 +1,4 @@
-# Unicode::Age [![[version]](https://badge.fury.io/rb/unicode-age.svg)](https://badge.fury.io/rb/unicode-age)  [![[travis]](https://travis-ci.org/janlelis/unicode-age.svg)](https://travis-ci.org/janlelis/unicode-age)
+# Unicode::Age [![[version]](https://badge.fury.io/rb/unicode-age.svg)](https://badge.fury.io/rb/unicode-age)  [![[ci]](https://github.com/janlelis/unicode-age/workflows/Test/badge.svg)](https://github.com/janlelis/unicode-age/actions?query=workflow%3ATest)
 
 A micromodule to detect which Unicode version is required to display a string.
 
