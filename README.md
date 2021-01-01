@@ -23,4 +23,4 @@ See the [Unicode — Ruby version table at Idiosyncratic Ruby](https://idiosyncr
 
 ## MIT License
 
-Copyright (C) 2016-2020 Jan Lelis <https://janlelis.com>. Released under the MIT license.
+Copyright (C) 2016-2021 Jan Lelis <https://janlelis.com>. Released under the MIT license.
