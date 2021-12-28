@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 2.3.0
+
+* Support Unicode 13 (Ruby 3.1)
+
 ### 2.2.0
 
 * Support Ruby 3.0
