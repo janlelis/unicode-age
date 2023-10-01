@@ -28,6 +28,9 @@ module Unicode
       12.0,
       12.1,
       13.0,
+      14.0,
+      15.0,
+      15.1,
     ].freeze
 
     KNOWN_UNICODE_REGEXES = KNOWN_UNICODE_VERSIONS.map{ |uv|
