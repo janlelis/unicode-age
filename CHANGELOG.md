@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 2.4.0
+
+* Add support for Unicode up to 15.1
+
 ### 2.3.0
 
 * Support Unicode 13 (Ruby 3.1)
